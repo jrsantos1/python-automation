@@ -1,4 +1,4 @@
-from email_envio_pkg import run
+from email import run
 from conexao import dal
 import os
 import win32com.client
