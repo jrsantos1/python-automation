@@ -1,5 +1,5 @@
 from email import run
-from conexao import dal
+from config import dal
 import os
 import win32com.client
 import datetime

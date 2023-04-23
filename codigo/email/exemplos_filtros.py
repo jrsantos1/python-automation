@@ -23,8 +23,8 @@ cc_filtrado = inbox.Items.Restrict("[CC] = 'exemplo@dominio.com'")
 inbox = outlook.GetNamespace("MAPI").GetDefaultFolder(6)
 data_filtrada = inbox.Items.Restrict("[CreationTime] >= '" + datetime.datetime(2023, 1, 1).strftime('%m/%d/%Y %H:%M %p') + "'")
 
-# Filtrar por palavras-chave no corpo do email em formato HTML:
 
+# Filtrar por palavras-chave no corpo do email em formato HTML:
 inbox = outlook.GetNamespace("MAPI").GetDefaultFolder(6)
 html_body_filtrado = inbox.Items.Restrict("[HTMLBody] LIKE '%palavra_chave%'")
 
